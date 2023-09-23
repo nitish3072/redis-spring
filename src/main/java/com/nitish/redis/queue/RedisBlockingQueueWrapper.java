@@ -12,6 +12,7 @@ import java.util.function.Function;
 @Slf4j
 @Data
 public class RedisBlockingQueueWrapper<E> {
+
     private final CopyOnWriteArrayList<RedisBlockingQueue<E>> queues = new CopyOnWriteArrayList<>();
     private final RedisBlockingQueueParams params;
     private final Function<E, Integer> hashCodeFunction;
