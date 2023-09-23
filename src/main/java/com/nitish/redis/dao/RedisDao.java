@@ -4,5 +4,4 @@ public interface RedisDao<T> {
 
     String getRedisKey(T entry);
 
-
 }

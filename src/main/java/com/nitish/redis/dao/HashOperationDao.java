@@ -22,4 +22,5 @@ public interface HashOperationDao<T> extends RedisDao<T> {
     List<T> getRecords(T entity);
 
     void storeBulkData(List<RedisInsertValues<T>> redisInsertValues);
+
 }
