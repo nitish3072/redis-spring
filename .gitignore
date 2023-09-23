@@ -1,0 +1,110 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+ui/dist
+ui/tmp
+ui/out-tsc
+
+# dependencies
+asset-module/ui/node_modules
+asset-module/ui/node
+
+# IDEs and editors
+ui/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+ui/.sass-cache
+ui/connect.lock
+ui/coverage
+ui/libpeerconnection.log
+ui/npm-debug.log
+ui/testem.log
+ui/typings
+
+# e2e
+ui/e2e/*.js
+ui/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+build-db/output_er.sql
+build-db/undo_er.sql
+build/build-db/output_er.sql
+build/build-db/undo_er.sql
+dao-module/build-db/undo_er.sql
+dao-module/build-db/output_er.sql
+/.metadata/
+/logs/
+applicationrun-module/logs/
+base-module/logs/
+dao-module/logs/
+ruleengine-module/logs/
+transportsender-module/logs/
+asset-module/logs/
+auth-module/logs/
+onboarding-module/logs/
+user-module/logs/
+api-gateway/logs/
+access-module/logs/
+*.log
+/build/prod/files/api-gateway/
+/build/prod/files/applicationrun-module/
+/build/prod/files/asset-module/
+/build/prod/files/access-module/
+/build/prod/files/auth-module/
+/build/prod/files/naming-server/
+/build/prod/files/user-module/
+/build/prod/files/userAuth-module/
+/build/prod/files/onboarding-module/
+/build/prod/files/importer-module/
+/build/prod/files/transportsender-module/
+/build/prod/files/notification-module/
+git.properties
+/asset-module/ui/.angular/cache
+/hardware-testing/ui/.angular/cache
