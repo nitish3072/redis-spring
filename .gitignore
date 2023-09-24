@@ -37,10 +37,6 @@ ui/dist
 ui/tmp
 ui/out-tsc
 
-# dependencies
-asset-module/ui/node_modules
-asset-module/ui/node
-
 # IDEs and editors
 ui/.idea
 .project
@@ -73,38 +69,6 @@ ui/e2e/*.map
 # System Files
 .DS_Store
 Thumbs.db
-build-db/output_er.sql
-build-db/undo_er.sql
-build/build-db/output_er.sql
-build/build-db/undo_er.sql
-dao-module/build-db/undo_er.sql
-dao-module/build-db/output_er.sql
 /.metadata/
 /logs/
-applicationrun-module/logs/
-base-module/logs/
-dao-module/logs/
-ruleengine-module/logs/
-transportsender-module/logs/
-asset-module/logs/
-auth-module/logs/
-onboarding-module/logs/
-user-module/logs/
-api-gateway/logs/
-access-module/logs/
 *.log
-/build/prod/files/api-gateway/
-/build/prod/files/applicationrun-module/
-/build/prod/files/asset-module/
-/build/prod/files/access-module/
-/build/prod/files/auth-module/
-/build/prod/files/naming-server/
-/build/prod/files/user-module/
-/build/prod/files/userAuth-module/
-/build/prod/files/onboarding-module/
-/build/prod/files/importer-module/
-/build/prod/files/transportsender-module/
-/build/prod/files/notification-module/
-git.properties
-/asset-module/ui/.angular/cache
-/hardware-testing/ui/.angular/cache

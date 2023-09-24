@@ -37,7 +37,7 @@ public abstract class HashOperationRedisDaoImpl<T extends RedisEntity> implement
 
     @Override
     public T getRecord(String key, T entity) {
-        return getHashOperation().get(getRedisKey(entity),key);
+        return getHashOperation().get(getRedisKey(entity), key);
     }
 
     @Override
