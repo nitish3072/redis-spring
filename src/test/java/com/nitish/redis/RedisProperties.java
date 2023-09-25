@@ -18,5 +18,4 @@ public class RedisProperties {
         this.redisHost = redisHost;
     }
 
-    // getters
 }

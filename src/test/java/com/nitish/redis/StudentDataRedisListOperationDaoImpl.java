@@ -29,7 +29,7 @@ public class StudentDataRedisListOperationDaoImpl extends HashOperationRedisDaoI
         RedisInsertValues<StudentRedisEntity> values = new RedisInsertValues<>();
         values.setKey(getRedisKey(entity));
         values.setEntity(entity);
-        add(getRedisKey(entity), entity);
+        add(entity.getUuid(), entity);
     }
 
     @Override
