@@ -10,7 +10,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = { TestRedisConfiguration.class, RedisProperties.class, RedisConfig.class, StudentDataRedisListOperationDaoImpl.class })
@@ -21,9 +21,10 @@ public class IntegrationTest {
 	@Autowired
 	private StudentDataRedisListOperationDao<StudentRedisEntity> dataRedisListOperationDao;
 
+	UUID id = UUID.randomUUID();
+
 	@Test
-	public void saveToRedis() {
-		UUID id = UUID.randomUUID();
+	public void saveAndGetToRedis() {
 		StudentRedisEntity studentRedisEntity = new StudentRedisEntity();
 		studentRedisEntity.setPhone("78738183728");
 		studentRedisEntity.setEmail("test@test.com");
@@ -33,6 +34,20 @@ public class IntegrationTest {
 		dataRedisListOperationDao.addToHash(studentRedisEntity);
 		StudentRedisEntity fetched = dataRedisListOperationDao.getData(id.toString());
 		assertEquals(fetched.getUuid(), id.toString());
+	}
+
+	@Test
+	public void deleteDataRedis() {
+		StudentRedisEntity studentRedisEntity = new StudentRedisEntity();
+		studentRedisEntity.setPhone("78738183728");
+		studentRedisEntity.setEmail("test@test.com");
+		studentRedisEntity.setFirstname("Testfirst");
+		studentRedisEntity.setLastname("Testlast");
+		studentRedisEntity.setUuid(id.toString());
+		dataRedisListOperationDao.addToHash(studentRedisEntity);
+		dataRedisListOperationDao.deleteData(id.toString());
+		StudentRedisEntity fetched = dataRedisListOperationDao.getData(id.toString());
+		assertNull(fetched);
 	}
 
 }
