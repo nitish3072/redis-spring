@@ -7,8 +7,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>redis-module</artifactId>
-    <name>redis-module</name>
+    <artifactId>redis-spring</artifactId>
+    <name>redis-spring</name>
     <packaging>jar</packaging>
     <version>1.0.0001</version>
     <properties>
